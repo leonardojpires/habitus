@@ -1,0 +1,45 @@
+@import 'tailwindcss';
+
+:root {
+  /* COLORS */
+  --primary: #4B3F2F;
+  --secondary: #D9C6B0;
+  --highlight: #F28C28;
+  --background: #FDFCF7;
+  --text: #1C1C1C;
+  --text-secondary: #6B6B6B;
+  --borders: #E3E3E3;
+  --hover: #E69A3A;
+
+  /* FONTS */
+  --headline: "Montserrat", serif;
+  --body: "Lato", sans-serif;
+}
+
+@layer utilities {
+  .font-headline {
+    font-family: var(--headline), serif;
+  }
+
+  .font-body {
+    font-family: var(--body), sans-serif;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}

@@ -1,0 +1,5 @@
+@import 'tailwindcss';
+
+.links {
+    @apply hover:text-[#4b3a2f] transition;
+}

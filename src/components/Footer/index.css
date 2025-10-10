@@ -1,0 +1,13 @@
+@import 'tailwindcss';
+
+.links {
+    @apply hover:text-[var(--highlight)];
+}
+
+.atendment {
+    @apply flex items-center gap-2;
+}
+
+.icons {
+    @apply w-10 h-10 flex items-center justify-center rounded-full bg-[var(--secondary)] text-[var(--primary)] hover:bg-[var(--hover)] transition;
+}
