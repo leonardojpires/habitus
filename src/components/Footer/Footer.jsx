@@ -22,7 +22,7 @@ function Footer() {
         <div>
           <h3 className="font-headline font-semibold mb-3">Links Rápidos</h3>
           <ul className="flex flex-col gap-2 space-y-2 text-[var(--secondary)] text-sm">
-            <li><Link to="/" className="links">Home</Link></li>
+            <li><Link to="/" className="links">Início</Link></li>
             <li><Link to="/produtos" className="links">Produtos</Link></li>
             <li><Link to="/carrinho" className="links">Carrinho</Link></li>
             <li><Link to="/contacto" className="links">Contacto</Link></li>

@@ -66,9 +66,9 @@ export default function Header() {
       {open && (
         <div className="md:hidden bg-white border-t border-gray-200 !px-0 !py-4">
           <div className="flex flex-col space-y-4 gap-5 font-medium text-gray-800">
-          <Link to="/" className="links py-2 rounded-lg">Início</Link>
-          <Link to="/produtos" className="links py-2 rounded-lg">Produtos</Link>
-          <Link to="/contacto" className="links py-2 rounded-lg">Contacto</Link>
+            <Link to="/" className="links py-2 rounded-lg">Início</Link>
+            <Link to="/produtos" className="links py-2 rounded-lg">Produtos</Link>
+            <Link to="/contacto" className="links py-2 rounded-lg">Contacto</Link>
           </div>
         </div>
       )}

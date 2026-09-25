@@ -1,7 +1,6 @@
 import "./index.css";
 import categories from "./filtrosData";
 import products from "./produtosData";
-import { ShoppingCart, ShoppingBag } from "lucide-react";
 import { useEffect, useState } from "react";
 import ProductCard from "./../../components/ProductCard/ProductCard";
 import Toast from "./../../components/Toast/Toast";
@@ -18,7 +17,7 @@ function Produtos() {
   const [showToast, setShowToast] = useState(false);
 
   const [ toastMessage, setToastMessage] = useState('');
-  
+
   useEffect(() => {
     let filtered = products;
     const saved = JSON.parse(localStorage.getItem("favorites") || "[]");

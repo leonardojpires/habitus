@@ -61,7 +61,7 @@ export default function ContactForm() {
       className="!py-30 !md:py-28 flex justify-center items-start bg-[var(--background)] !px-4 !sm:px-6 !lg:px-8"
     >
       <div className="max-w-4xl mx-auto w-full">
-        <div className="text-center mb-12 md:mb-16">
+        <div className="text-center mb-12 md:mb-16 flex flex-col justify-center items-center gap-2">
           <h2 className="text-3xl md:text-5xl font-headline text-[var(--primary)] mb-4 font-bold">
             Vamos conversar 👋
           </h2>
@@ -149,7 +149,7 @@ export default function ContactForm() {
             <button
               disabled={isSubmitting}
               type="submit"
-              className="w-full md:w-auto bg-[var(--highlight)] text-white font-headline !px-8 !py-4 rounded-xl inline-flex items-center justify-center gap-2 hover:bg-[var(--hover)] disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-[var(--highlight)] transition-all duration-200 font-semibold shadow-md !mt-5"
+              className="w-full md:w-auto bg-[var(--highlight)] text-white font-headline !px-8 !py-4 rounded-xl inline-flex items-center justify-center gap-2 hover:bg-[var(--hover)] disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-[var(--highlight)] transition-all duration-200 font-semibold shadow-md !mt-5 cursor-pointer"
             >
               {isSubmitting ? (
                 <>
@@ -158,7 +158,7 @@ export default function ContactForm() {
                 </>
               ) : (
                 <>
-                  <Send size={18} />
+                  <Send size={18}/>
                   Enviar mensagem
                 </>
               )}
