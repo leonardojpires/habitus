@@ -9,10 +9,10 @@ import NotFound from './../pages/NotFound/NotFound';
 
 function AppRoutes() {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename="/habitus">
             <Routes>
                 <Route path="/" element={<BasePage />}>
-                    <Route path="/habitus" element={<Home />}></Route>
+                    <Route path="/" element={<Home />}></Route>
                     <Route path="/produtos" element={<Produtos />}></Route>
                     <Route path="/produtos/:id" element={<Produto />}></Route>
                     <Route path="/contacto" element={<Contacto />}></Route>
