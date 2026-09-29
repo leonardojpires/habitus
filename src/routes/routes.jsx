@@ -12,7 +12,7 @@ function AppRoutes() {
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<BasePage />}>
-                    <Route index element={<Home />}></Route>
+                    <Route path="/habitus" element={<Home />}></Route>
                     <Route path="/produtos" element={<Produtos />}></Route>
                     <Route path="/produtos/:id" element={<Produto />}></Route>
                     <Route path="/contacto" element={<Contacto />}></Route>
