@@ -7,7 +7,6 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "deploy": "gh-pages -d build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
